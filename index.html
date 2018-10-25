@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hello World</h1>
+<div class="my-div">
+    <!--{{message}}-->
+    <!--<h1>Votes: {{ votes }}</h1>-->
+    <!--<button type="button" @click="votes++">+</button>-->
+    <!--<button type="button" v-on:click="votes&#45;&#45;">-</button>-->
+
+    <!--<h1>{{ name }}</h1>-->
+    <!--<input type="text" v-model = "name">-->
+            <!--<p>{{firstname}}</p>-->
+            <!--<p>{{lastname}}</p>-->
+            <!--<p>{{fullname}}</p>-->
+
+    <!--<table>-->
+        <!--<tr>-->
+            <!--<td>First Name</td>-->
+            <!--<td>-->
+                <!--<input type="text" v-model = "firstname">-->
+            <!--</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td>Last Name</td>-->
+            <!--<td>-->
+                <!--<input type="text" v-model = "lastname">-->
+            <!--</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td>Full Name</td>-->
+            <!--<td>-->
+                <!--<input type="text"  v-model = "fullname">-->
+            <!--</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td></td>-->
+            <!--<td>-->
+                <!--<input type="button" @click ="getfullname" value="submit">-->
+            <!--</td>-->
+        <!--</tr>-->
+    <!--</table>-->
+    <table>
+        <tr>
+            <td>First Number</td>
+            <td>
+                <input type="text" v-model = "fnumber">
+            </td>
+        </tr>
+        <tr>
+            <td>Second Number</td>
+            <td>
+                <input type="text" v-model = "snumber">
+            </td>
+        </tr>
+        <tr>
+            <td>Result</td>
+            <td>
+                <input type="text"  v-model = "result">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" @click ="addition" value="+">
+            </td>
+             <td>
+                <input type="button" @click ="substruction" value="-">
+            </td>
+             <td>
+                <input type="button" @click ="multiplication" value="*">
+            </td>
+             <td>
+                <input type="button" @click ="division" value="/">
+            </td>
+
+        </tr>
+    </table>
+    <br>
+    
+    <ul>
+       <li v-for = "course in courses">
+           {{course.title}} by-{{course.instructor}}
+       </li>
+    </ul>
+
+</div>
+
+<script src="vue.js" ></script>
+<script src="script.js" ></script>
+</body>
+</html>
